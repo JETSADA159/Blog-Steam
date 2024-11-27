@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <header>
+        <div class="container">
+            <img src="C:\Users\mingk\AppData\Local\Temp\c9b77585-a2fe-495f-a804-6fda0dfc2ed4_Blue Illustration Game Presentation.zip.ed4\3.png" alt="Steam Platform" class="header-image">
+
+           
+            </div>  
+        </header>
+    <style>
+        /* ตั้งค่าสีพื้นหลังและปรับปรุงพื้นหลัง */
+        body {
+            background-color: #171a21;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* เพื่อป้องกันการเลื่อนข้าง */
+        }
+
+        /* Header - เพิ่มภาพพื้นหลัง */
+        header {
+            background-image: url('your_header_image_url_here');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            text-align: center;
+            color: #fff;
+            font-size: 2rem;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        /* ทำให้เนื้อหาของข้อความมีความโดดเด่น */
+        .centered-header {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ff6f00;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .centered-header:hover {
+            color: #f5a623;
+            transform: scale(1.1);
+        }
+
+        /* จัดวางวิดีโอให้กลาง */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            margin: 20px 0;
+        }
+
+        iframe {
+            width: 80%;
+            height: 80%;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* จัดรูปภาพภายในเนื้อหา */
+        .content-image {
+            width: 100%;
+            border-radius: 15px;
+            margin-top: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* การตกแต่งลิสต์สำหรับจุดเด่น */
+        ol {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-left: 5px solid #ff6f00;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        ol li:hover {
+            transform: scale(1.05);
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        ol li strong {
+            font-size: 1.3rem;
+            color: #ff6f00;
+        }
+
+        /* เพิ่มความรู้สึกเกมเมอร์ในสไตล์ของฟีเจอร์ */
+        .feature {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #252525;
+            border-radius: 10px;
+            border-left: 5px solid #ff6f00;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: scale(1.05);
+        }
+
+        .feature h3 {
+            font-size: 1.6rem;
+            color: #ff6f00;
+            font-weight: bold;
+        }
+
+        .feature p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+
+        /* จัดการข้อความในบทความ */
+        h2, p {
+            text-align: justify;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #e0e0e0;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #ff6f00;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /* ฟีเจอร์การจัดการเกม */
+        .game-management {
+            margin: 40px 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ff6f00;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        /* เพิ่มแอนิเมชันให้กับข้อความ */
+        .game-management p,
+        .feature h3,
+        .feature p {
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    
+
+    <section>
+        <h2 class="highlighted-text">
+            Steam คือแพลตฟอร์มจัดจำหน่ายเกมดิจิทัลที่เปิดตัวครั้งแรกในปี 2003 โดย Valve Corporation ซึ่งเป็นบริษัทที่มีชื่อเสียงจากการพัฒนาเกมอย่าง Half-Life และ Portal การใช้ Steam จะทำให้คุณสามารถดาวน์โหลดเกมจากร้านค้าออนไลน์ที่มีเกมให้เลือกมากมาย รวมถึงคุณสมบัติพิเศษต่างๆ เช่น การอัปเดตเกมอัตโนมัติ, การเล่นเกมหลายผู้เล่นออนไลน์, และการซื้อเกมในราคาพิเศษ
+        </h2>
+    </section>
+    
+    <section>
+        <h2 class="highlighted-header">
+
+            <span class="italic-text"?>ทำไม Steam ถึงเป็นแพลตฟอร์มที่ดีที่สุดสำหรับนักเล่นเกม?ในโลกของการเล่นเกมออนไลน์ Steam ถือเป็นแพลตฟอร์มที่ได้รับความนิยมสูงสุดและมีผู้ใช้งานหลายล้านคนทั่วโลก หากคุณยังไม่เคยใช้ Steam หรือกำลังมองหาแหล่งรวมเกมที่จะช่วยให้ประสบการณ์การเล่นเกมของคุณสนุกยิ่งขึ้น ลองมาทำความรู้จักกับ Steam กัน</span>
+        </h2>
+    </section>
+    
+    <style>
+        /* เพิ่มการเคลื่อนไหวและลูกเล่น */
+        .highlighted-text {
+            color: #ff6f00;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-align: justify;
+            line-height: 1.8;
+            background: linear-gradient(90deg, rgba(255, 111, 0, 0.5), rgba(255, 255, 255, 0.3));
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.5s ease, background 0.4s ease;
+        }
+    
+        .highlighted-text:hover {
+            transform: scale(1.05);
+            background: linear-gradient(90deg, rgba(255, 111, 0, 0.8), rgba(255, 255, 255, 0.5));
+        }
+    
+        /* การเพิ่มแอนิเมชันและการจัดข้อความ */
+        .highlighted-header {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #ff6f00;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            transform: scale(1);
+            animation: zoomIn 0.8s ease-in-out;
+        }
+    
+        .highlighted-header:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+            transform: scale(1.05);
+        }
+    
+        .italic-text {
+            font-style: italic;
+            font-size: 1.3rem;
+            color: #dcdcdc;
+            line-height: 1.8;
+            margin-top: 10px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+    
+        .italic-text:hover {
+            color: #ff6f00;
+            transform: scale(1.1);
+        }
+    
+        /* การสร้างแอนิเมชันสำหรับการเข้า */
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    
+        /* แก้ไขให้ข้อความมีลักษณะโดดเด่นและมีการเคลื่อนไหว */
+        .highlighted-text, .highlighted-header {
+            animation: fadeIn 1s ease-out;
+        }
+    
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
+    </style>
+    
+        
+        <style>
+            /* เพิ่มการเคลื่อนไหวและลูกเล่น */
+            .highlighted-text {
+                color: #ff6f00;
+                font-size: 1.4rem;
+                font-weight: bold;
+                text-align: justify;
+                line-height: 1.8;
+                background: linear-gradient(90deg, rgba(255, 111, 0, 0.5), rgba(255, 255, 255, 0.3));
+                padding: 20px;
+                border-radius: 15px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+                transition: transform 0.5s ease, background 0.4s ease;
+            }
+        
+            .highlighted-text:hover {
+                transform: scale(1.05);
+                background: linear-gradient(90deg, rgba(255, 111, 0, 0.8), rgba(255, 255, 255, 0.5));
+            }
+        
+            /* การเพิ่มแอนิเมชันและการจัดข้อความ */
+            .highlighted-header {
+                font-size: 2.2rem;
+                font-weight: bold;
+                color: #ff6f00;
+                text-align: center;
+                text-transform: uppercase;
+                background-color: rgba(0, 0, 0, 0.7);
+                padding: 25px;
+                border-radius: 12px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+                transform: scale(1);
+                animation: zoomIn 0.8s ease-in-out;
+            }
+        
+            .highlighted-header:hover {
+                background-color: #ff6f00(95, 85, 190);
+                transform: scale(1.05);
+            }
+        
+            .italic-text {
+                font-style: italic;
+                font-size: 1.3rem;
+                color: #ff6f00;
+                line-height: 1.8;
+                margin-top: 10px;
+                transition: color 0.3s ease, transform 0.3s ease;
+            }
+        
+            .italic-text:hover {
+                color: #ff6f00;
+                transform: scale(1.1);
+            }
+        
+            /* การสร้างแอนิเมชันสำหรับการเข้า */
+            @keyframes zoomIn {
+                from {
+                    transform: scale(0.8);
+                    opacity: 0;
+                }
+                to {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+        
+            /* แก้ไขให้ข้อความมีลักษณะโดดเด่นและมีการเคลื่อนไหว */
+            .highlighted-text, .highlighted-header {
+                animation: fadeIn 1s ease-out;
+            }
+        
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(50px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        
+        </style>
+        
+        
+
+       
+
+        <section>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/F7jbHr-lAXw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        
+        <section class="centered-text">
+            <h2>จุดเด่นที่ทำให้ Steam ไม่เหมือนใคร</h2>
+        </section>
+        
+        <style>
+            .centered-text {
+                display: flex;                /* ใช้ Flexbox */
+                justify-content: center;      /* จัดกลางแนวนอน */
+                align-items: center;          /* จัดกลางแนวตั้ง */
+                height: 200px;                /* กำหนดความสูง */
+                text-align: center;           /* จัดข้อความให้ตรงกลาง */
+                background: linear-gradient(135deg, #171a21, #1e272e); /* ไล่สีจากเทาเข้มไปฟ้าเข้ม */
+                border-radius: 10px;          /* มุมโค้งมน */
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* เงา */
+                margin: 20px;                 /* ระยะห่าง */
+            }
+        
+            h2 {
+                font-size: 2.5rem;             /* ขนาดฟอนต์ */
+                color: #ff6f00;                /* สีฟอนต์เป็นสีส้มสดคล้ายสตรีม */
+                font-weight: bold;             /* ตัวหนา */
+                text-transform: uppercase;     /* ทำให้ข้อความเป็นตัวพิมพ์ใหญ่ */
+                letter-spacing: 2px;           /* เพิ่มระยะห่างระหว่างตัวอักษร */
+                text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* เงาให้ข้อความ */
+                transition: transform 0.3s ease, color 0.3s ease; /* เอฟเฟกต์การเคลื่อนไหว */
+            }
+        
+            h2:hover {
+                color: #00bcd4; /* เปลี่ยนสีเมื่อ hover เป็นสีน้ำเงินคล้าย Steam */
+                transform: scale(1.1); /* ขยายข้อความเมื่อ hover */
+            }
+        </style>
+        
+
+            <ol>
+                <li>
+                    <strong>คลังเกมขนาดใหญ่ (Massive Game Library)</strong>
+                    <p>Steam มีเกมมากกว่า 50,000 เกม ครอบคลุมทุกแนว ไม่ว่าจะเป็น RPG, FPS, Strategy, หรือ Simulation คุณสามารถค้นหาเกมที่เหมาะกับสไตล์ของคุณได้อย่างง่ายดาย</p>
+                    <section class="image-gallery">
+                        <img src="C:\Users\mingk\OneDrive\Pictures\Screenshots 1\ภาพหน้าจอ (101).png" alt="Steam Community" class="content-image">
+                        <img src="C:\Users\mingk\Downloads\AA1uJw1d.jpg" alt="Steam Community" class="content-image">
+                        <img src="C:\Users\mingk\Downloads\hq720.jpg" alt="Steam Community" class="content-image">
+                    </section>
+                    
+                    <style>
+                        /* การจัดการให้ภาพเป็นสี่เหลี่ยมจตุรัสและจัดเรียงในแถว */
+                        .image-gallery {
+                            display: flex; /* ใช้ Flexbox เพื่อจัดภาพเรียงกัน */
+                            justify-content: space-between; /* เว้นระยะห่างระหว่างภาพ */
+                            gap: 10px; /* ระยะห่างระหว่างภาพ */
+                        }
+                    
+                        .content-image {
+                            width: 33%; /* กำหนดให้แต่ละภาพมีความกว้าง 33% ของส่วนที่มีอยู่ */
+                            height: auto; /* ความสูงอัตโนมัติ */
+                            aspect-ratio: 1/1; /* ทำให้ภาพเป็นสี่เหลี่ยมจตุรัส */
+                            object-fit: cover; /* ให้ภาพครอบคลุมพื้นที่สี่เหลี่ยมโดยไม่เสียอัตราส่วน */
+                            border-radius: 10px; /* ขอบโค้งของภาพ */
+                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาเบาๆ เพิ่มความลึก */
+                        }
+                    </style>
+                </li>
+
+                <li>
+                    <strong>ฟีเจอร์ชุมชน (Community Features)</strong>
+                    <p>Steam ไม่ได้เป็นเพียงที่สำหรับเล่นเกม แต่ยังเป็นที่สำหรับพบปะกับเพื่อนหรือผู้เล่นคนอื่น ๆ ผ่านฟีเจอร์ต่าง ๆ เช่นการแชทแบบเรียลไทม์  
+                        กลุ่ม (Groups) สำหรับนักเล่นเกมที่ชอบแนวเดียวกัน  
+                        กระทู้สนทนา (Forums) สำหรับแชร์เทคนิคหรือรีวิว</p>
+                        <section class="image-gallery">
+                            <img src="https://static.thairath.co.th/media/4DQpjUtzLUwmJZZSC4Mqx6AovGwhXQHFPtliDENiEjxO.jpg" alt="Steam Community" class="content-image">
+                            <img src="C:\Users\mingk\OneDrive\Pictures\Screenshots 1\สกรีนช็อต 2024-11-27 203607.png" alt="Steam Community" class="content-image">
+                            <img src="file:///C:/Users/mingk/Downloads/when-do-you-think-the-community-section-of-steam-will-get-a-v0-i9n9iopqfc0d1.webp" alt="Steam Community" class="content-image">
+                        </section>
+                        
+                        <style>
+                            /* การจัดการให้ภาพเป็นสี่เหลี่ยมจตุรัสและจัดเรียงในแถว */
+                            .image-gallery {
+                                display: flex; /* ใช้ Flexbox เพื่อจัดภาพเรียงกัน */
+                                justify-content: space-between; /* เว้นระยะห่างระหว่างภาพ */
+                                gap: 10px; /* ระยะห่างระหว่างภาพ */
+                            }
+                        
+                            .content-image {
+                                width: 33%; /* กำหนดให้แต่ละภาพมีความกว้าง 33% ของส่วนที่มีอยู่ */
+                                height: auto; /* ความสูงอัตโนมัติ */
+                                aspect-ratio: 1/1; /* ทำให้ภาพเป็นสี่เหลี่ยมจตุรัส */
+                                object-fit: cover; /* ให้ภาพครอบคลุมพื้นที่สี่เหลี่ยมโดยไม่เสียอัตราส่วน */
+                                border-radius: 10px; /* ขอบโค้งของภาพ */
+                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาเบาๆ เพิ่มความลึก */
+                            }
+                        </style>
+                </li>
+
+                <li>
+                    <strong>โปรโมชั่นลดราคาแบบจัดเต็ม (Steam Sales)</strong>
+                    <p>Steam Steam ขึ้นชื่อเรื่องการจัดโปรโมชั่นลดราคาสุดโหด เช่น Summer Sale และ Winter Sale ซึ่งมีเกมหลายพันเกมลดราคาสูงถึง 90%</p>
+                    <section class="image-gallery">
+                        <img src="C:\Users\mingk\OneDrive\Pictures\Screenshots 1\ภาพหน้าจอ (102).png" alt="Steam Community" class="content-image">
+                        <img src="file:///C:/Users/mingk/Downloads/312603809_1174652683434993_2928044291960134349_n.webp" alt="Steam Community" class="content-image">
+                        <img src="C:\Users\mingk\Downloads\Steam-2.jpg" alt="Steam Community" class="content-image">
+                    </section>
+                    
+                    <style>
+                        /* การจัดการให้ภาพเป็นสี่เหลี่ยมจตุรัสและจัดเรียงในแถว */
+                        .image-gallery {
+                            display: flex; /* ใช้ Flexbox เพื่อจัดภาพเรียงกัน */
+                            justify-content: space-between; /* เว้นระยะห่างระหว่างภาพ */
+                            gap: 10px; /* ระยะห่างระหว่างภาพ */
+                        }
+                    
+                        .content-image {
+                            width: 33%; /* กำหนดให้แต่ละภาพมีความกว้าง 33% ของส่วนที่มีอยู่ */
+                            height: auto; /* ความสูงอัตโนมัติ */
+                            aspect-ratio: 1/1; /* ทำให้ภาพเป็นสี่เหลี่ยมจตุรัส */
+                            object-fit: cover; /* ให้ภาพครอบคลุมพื้นที่สี่เหลี่ยมโดยไม่เสียอัตราส่วน */
+                            border-radius: 10px; /* ขอบโค้งของภาพ */
+                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาเบาๆ เพิ่มความลึก */
+                        }
+                    </style>
+                </li>
+            </ol>
+        </section>
+
+        <section class="game-management">
+            <h2 class="section-title">การจัดการเกมอย่างมืออาชีพ</h2>
+            <div class="feature">
+                <h3>การติดตั้งและอัปเดตเกมอัตโนมัติ</h3>
+                <p>ทุกครั้งที่มีการอัปเดตเกม Steam จะดาวน์โหลดและติดตั้งการอัปเดตเหล่านั้นโดยอัตโนมัติ เพื่อให้คุณไม่ต้องกังวลเกี่ยวกับการปรับปรุงเวอร์ชันของเกม</p>
+            </div>
+            <div class="feature">
+                <h3>บันทึกเกม Cloud</h3>
+                <p>คุณสามารถบันทึกความคืบหน้าของเกมไว้บนคลาวด์ ซึ่งทำให้คุณสามารถเล่นเกมต่อจากจุดที่ค้างไว้ได้จากคอมพิวเตอร์เครื่องอื่น</p>
+            </div>
+            <div class="feature">
+                <h3>ไลบรารีเกมส่วนตัว</h3>
+                <p> จัดการเกมทั้งหมดของคุณในที่เดียว แถมยังสามารถติดตามการเล่นของเพื่อนๆ ได้ด้วย</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
